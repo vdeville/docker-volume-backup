@@ -29,7 +29,7 @@ backup_volume() {
     done
 
     # Make Backup
-    docker run -v $volume:/volume --rm loomchild/volume-backup backup - > $BACKUPS_DIR$volume-$(date '+%d-%h-%Y-%T').tar.bz2
+    docker run -v $volume:/volume --rm loomchild/volume-backup backup - > $BACKUPS_DIR$volume-$(date '+%d-%h-%Y-%H%M%S').tar.bz2
     debug_log "Volume ${volume} backuped"
 
     # Restart before stopped containers
