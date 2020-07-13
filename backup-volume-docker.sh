@@ -33,7 +33,7 @@ backup_volume() {
     debug_log "Volume ${volume} backuped"
 
     # Restart before stopped containers
-    for container in $TEMP_CONTAINERS; do
+    for container in ${TEMP_CONTAINERS[@]}; do
       docker start $container
       debug_log "Container ${container} started"
     done
@@ -56,7 +56,7 @@ restore_volume() {
     debug_log "Volume ${volume} restored"
 
     # Restart before stopped containers
-    for container in $TEMP_CONTAINERS; do
+    for container in ${TEMP_CONTAINERS[@]}; do
       docker start $container
       debug_log "Container ${container} started"
     done
