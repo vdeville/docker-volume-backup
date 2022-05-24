@@ -52,7 +52,7 @@ restore_volume() {
     done
 
     # Make Restore
-    cat $archive | docker run -i -v $volume:/volume --rm loomchild/volume-backup restore -
+    cat $archive | docker run -i -v $volume:/volume --rm loomchild/volume-backup restore -f -
     debug_log "Volume ${volume} restored"
 
     # Restart before stopped containers
