@@ -44,7 +44,7 @@ For example:
 
 For example this config will backup volume1 and volume2:
 
-    bash backup-volume-docker.sh backup CONFIG
+    bash backup-volume-docker.sh backup -v CONFIG
 
 
 
