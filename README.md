@@ -38,6 +38,16 @@ For example:
     bash backup-volume-docker.sh backup
 
 
+### Backup all volumes filled in the config variable BACKUP_VOLUMES
+
+`BACKUP_VOLUMES="volume1 volume2"`
+
+For example this config will backup volume1 and volume2:
+
+    bash backup-volume-docker.sh backup CONFIG
+
+
+
 ### Backup specific volume
 
 
