@@ -2,7 +2,7 @@
 
 : '
 Script created by Valentin DEVILLE (contact[@]valentin-deville.eu)
-Available on Github: https://github.com/MyTheValentinus/docker-volume-backup
+Available on Github: https://github.com/vdeville/docker-volume-backup
 
 Thanks to loomchild for his tools https://github.com/loomchild/volume-backup
 '
